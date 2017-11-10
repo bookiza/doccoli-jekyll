@@ -20,7 +20,7 @@ layout: default
                 <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             </h3>
 
-            {% assign date_format = site.bubblin-jekyll.date_format | default: "%b %-d, %Y" %}
+            {% assign date_format = site.doccoli-jekyll.date_format | default: "%b %-d, %Y" %}
             <span>{{ post.date | date: date_format }}</span>
 
         </li>

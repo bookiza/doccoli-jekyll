@@ -9,7 +9,7 @@ layout: default
 
       <p>
         <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-          {% assign date_format = site.bubblin-jekyll.date_format | default: "%b %-d, %Y" %}
+          {% assign date_format = site.doccoli-jekyll.date_format | default: "%b %-d, %Y" %}
           {{ page.date | date: date_format }}
         </time>
         {% if page.author %}
