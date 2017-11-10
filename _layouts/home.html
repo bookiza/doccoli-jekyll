@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div class="wrapper">
+
+    <h1 href="{{ "/" | relative_url }}">{{ site.title | escape }}</h1>
+
+    <hr>
+
+    <p class="right">Subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></p>
+
+    {{ content }}
+
+    <h2>Posts</h2>
+
+    <ul class="pad-vertically">
+        {% for post in site.posts %}
+        <li>
+            <h3>
+                <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </h3>
+
+            {% assign date_format = site.bubblin-jekyll.date_format | default: "%b %-d, %Y" %}
+            <span>{{ post.date | date: date_format }}</span>
+
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>

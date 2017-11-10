@@ -1,0 +1,135 @@
+/* Header */
+
+.mast {
+    text-overflow: ellipsis;
+    width: 100%;
+    z-index: 19999;
+}
+
+.bar {
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 45px;
+    margin: 0 auto;
+}
+
+.sprite-up {
+    background-image: url(images/logo.svg);
+    background-position: 44px 44px;
+}
+
+.logo {
+    background-repeat: no-repeat;
+    height: 44px;
+    width: 65px;
+    background-position: center;
+}
+
+
+/* In-logo Ajax loader */
+
+.loader {
+    animation: loading 1s linear infinite;
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    border: 5px solid;
+    border-top-color: #f9ff00;
+    border-left-color: #ef730c;
+    border-bottom-color: #445aff;
+    border-right-color: #0da;
+    border-radius: 50%;
+    margin: 32px -44px;
+}
+
+@keyframes loading {
+    0% {
+        transform: translate(-9px, -25px) rotate(0deg);
+    }
+    100% {
+        transform: translate(-9px, -25px) rotate(360deg);
+    }
+}
+
+.offline {
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
+}
+
+.offline.logo {
+    animation: loading 2s linear infinite;
+    box-sizing: content-box;
+    width: 20px;
+    height: 20px;
+    border: 5px solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-radius: 50%;
+    margin: 32px 8px 0 24px;
+}
+
+.beta-label {
+    margin: 8px 0 0 -16px;
+    transform: rotate(90deg);
+    color: #777;
+}
+
+.page-label {
+    padding: 11px 15px;
+    width: 90px;
+}
+
+.navi-menu {
+    li {
+        a:hover,
+        &#active a:hover,
+        &.selected a:hover {
+            color: #1177ff;
+        }
+    }
+    >menu li a {
+        display: block;
+    }
+    white-space: nowrap;
+    menu {
+        white-space: nowrap;
+        height: 45px;
+    }
+    li {
+        &#active {
+            background-position: left center;
+            background-repeat: no-repeat;
+        }
+        a {
+            /* font-weight: 700; */
+            line-height: 44px;
+            padding: 13px 20px;
+            color: #555;
+        }
+    }
+}
+
+.bar-line {
+    border-bottom: 1px solid #eaeaea;
+}
+
+.element {
+    display: flex;
+    height: 44px;
+    padding: 0 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.divider {
+    border-left: 1px solid #eaeaea;
+}
+
+.transparent-white {
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.super-small {
+    font-size: 70%;
+}
