@@ -1,0 +1,44 @@
+.sidebar {
+  width: 280px;
+  background: cornsilk;
+  height: 100vh;
+}
+
+ul.toc {
+    margin: 45px 0 0 0;
+    padding: 0;
+    li {
+        list-style: outside none none;
+        margin: 0;
+        height: 40px;
+        margin: 0 auto 1px;
+        background: rgba(241, 241, 241, 0.5);
+        border-radius: 5px;
+        &:hover {
+            background: hsla(200, 100%, 70%, .1);
+        }
+        a {
+            color: hsla(0, 5%, 35%, 1);
+            float: left;
+            width: 90%;
+            vertical-align: center;
+            clear: both;
+            text-decoration: none;
+            height: 40px;
+            padding: 0 0 0 10px;
+            display: -webkit-box;
+            display: flex !important;
+            align-items: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            &:hover {
+                float: left;
+                clear: both;
+                text-decoration: none;
+                cursor: pointer;
+                text-shadow: none;
+            }
+        }
+    }
+}

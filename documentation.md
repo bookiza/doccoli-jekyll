@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Documentation
+permalink: /documentation
 ---
 
 This is a Jekyll theme in use at [https://bubblin.io/blog/](https://bubblin.io/blog/). Feel free to customize and fork out your own Jekyll theme!

@@ -24,6 +24,7 @@ html {
 
 body {
     color: rgba(0, 0, 0, 0.85);
+    background: aliceblue;
     margin: 0;
     font-family: 'EB Garamond', serif;
     font-smooth: always;
@@ -237,7 +238,10 @@ th {
 /* Element Positioning */
 
 .container {
-    margin-top: 90px;
+    margin: 44px 0 0 0;
+    width: calc(100vw - 280px);
+    background: ivory;
+    margin-left: 281px;
 }
 
 .left {
@@ -457,9 +461,7 @@ ul.horizontal-list li {
             margin: 0 auto;
             text-align: center;
         }
-        .wrapper {
-            width: 90vw;
-        }
+
     }
 }
 
@@ -488,9 +490,6 @@ ul.horizontal-list li {
         }
         .align {
             margin: 0 0;
-        }
-        .wrapper {
-            width: 60vw;
         }
     }
 }
