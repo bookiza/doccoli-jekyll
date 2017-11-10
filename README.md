@@ -1,30 +1,30 @@
-# bubblin-jekyll
+# doccoli-jekyll
 
-The `Bubblin-Jekyll` is the Jekyll theme in use at [The Bubblin Blog](https://bubblin.io/blog/). It is a particularly useful theme for situations where you want to add a blog to your site, say on the side of your rails app (website) or over a url like this:
+The `doccoli-jekyll` is the Jekyll theme in use at [The Bubblin Blog](https://bubblin.io/blog/). It is a particularly useful theme for situations where you want to add a blog to your site, say on the side of your rails app (website) or over a url like this:
 
 > https://example.com/blog/
 
 
-`Bubblin-Jekyll` was originally a fork off of [Minima](https://github.com/jekyll/minima)—the default gem-theme of Jekyll-but it has been rewritten completely using the [Toucaan CSS](https://github.com/marvindanig/toucaan) fundamentals for its themed layout.
+`doccoli-jekyll` was originally a fork off of [Minima](https://github.com/jekyll/minima)—the default gem-theme of Jekyll-but it has been rewritten completely using the [Toucaan CSS](https://github.com/marvindanig/toucaan) fundamentals for its themed layout.
 
-A tutorial on how to setup a jekyll blog using the `bubblin-jekyll` theme alongside your rails app is available [here](https://bubblin.io/blog/).
+A tutorial on how to setup a jekyll blog using the `doccoli-jekyll` theme alongside your rails app is available [here](https://bubblin.io/blog/).
 
-[Theme preview](https://jekyll.github.io/bubblin-jekyll/)
+[Theme preview](https://jekyll.github.io/doccoli-jekyll/)
 
-![bubblin-jekyll theme preview](/screenshot.png)
+![doccoli-jekyll theme preview](/screenshot.png)
 
 ## Installation
 
 Add this line to your Jekyll site's Gemfile:
 
 ```ruby
-gem "bubblin-jekyll"
+gem "doccoli-jekyll"
 ```
 
 And add this line to your Jekyll site:
 
 ```yaml
-theme: bubblin-jekyll
+theme: doccoli-jekyll
 ```
 
 And then execute:
@@ -55,10 +55,10 @@ Refers to snippets of code within the `_includes` directory that can be inserted
 
 Refers to `.scss` files within the `_sass` directory that define the theme's styles.
 
-  - `bubblin-jekyll.scss` &mdash; The core file imported by preprocessed `main.scss`, it defines the variable defaults for the theme and also further imports sass partials to supplement itself.
-  - `bubblin-jekyll/_base.scss` &mdash; Resets and defines base styles for various HTML elements.
-  - `bubblin-jekyll/_layout.scss` &mdash; Defines the visual style for various layouts.
-  - `bubblin-jekyll/_syntax-highlighting.scss` &mdash; Defines the styles for syntax-highlighting.
+  - `doccoli-jekyll.scss` &mdash; The core file imported by preprocessed `main.scss`, it defines the variable defaults for the theme and also further imports sass partials to supplement itself.
+  - `doccoli-jekyll/_base.scss` &mdash; Resets and defines base styles for various HTML elements.
+  - `doccoli-jekyll/_layout.scss` &mdash; Defines the visual style for various layouts.
+  - `doccoli-jekyll/_syntax-highlighting.scss` &mdash; Defines the styles for syntax-highlighting.
 
 ### Assets
 
@@ -69,26 +69,26 @@ This directory can include sub-directories to manage assets of similar type, and
 
 ### Plugins
 
-Bubblin-jekyll comes preinstalled with the [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to know how to set it up.
+doccoli-jekyll comes preinstalled with the [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to know how to set it up.
 
 ## Usage
 
 ### Customization
 
-To override the default structure and style of bubblin-jekyll, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
+To override the default structure and style of doccoli-jekyll, simply create the concerned directory at the root of your site, copy the file you wish to customize to that directory, and then edit the file.
 e.g., to override the [`_includes/head.html `](_includes/head.html) file to specify a custom style path, create an `_includes` directory, copy `_includes/head.html` from minima gem folder to `<yoursite>/_includes` and start editing that file.
 
 The site's default CSS has now moved to a new place within the gem itself, [`assets/main.scss`](assets/main.scss). To **override the default CSS**, the file has to exist at your site source. Do either of the following:
 - Create a new instance of `main.scss` at site source.
   - Create a new file `main.scss` at `<your-site>/assets/`
   - Add the frontmatter dashes, and
-  - Add `@import "bubblin-jekyll";`, to `<your-site>/assets/main.scss`
+  - Add `@import "doccoli-jekyll";`, to `<your-site>/assets/main.scss`
   - Add your custom CSS.
 - Download the file from this repo
   - Create  a new file `main.scss` at `<your-site>/assets/`
   - Copy the contents at [assets/main.scss](assets/main.scss) onto the `main.scss` you just created, and edit away!
-- Copy directly from Bubblin-Jekyll gem
-  - Go to your local bubblin-jekyll gem installation directory ( run `bundle show bubblin-jekyll` to get the path to it ).
+- Copy directly from doccoli-jekyll gem
+  - Go to your local doccoli-jekyll gem installation directory ( run `bundle show doccoli-jekyll` to get the path to it ).
   - Copy the `assets/` folder from there into the root of `<your-site>`
   - Change whatever values you want, inside `<your-site>/assets/main.scss`
 
@@ -96,13 +96,13 @@ The site's default CSS has now moved to a new place within the gem itself, [`ass
 
 ### Change default date format
 
-You can change the default date format by specifying `site.bubblin-jekyll.date_format`
+You can change the default date format by specifying `site.doccoli-jekyll.date_format`
 in `_config.yml`.
 
 ```
-# Bubblin-Jekyll date format
+# doccoli-jekyll date format
 # Refer to http://shopify.github.io/liquid/filters/date/ to customize
-bubblin-jekyll:
+doccoli-jekyll:
   date_format: "%b %-d, %Y"
 ```
 
