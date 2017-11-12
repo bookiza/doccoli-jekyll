@@ -133,3 +133,19 @@
 .super-small {
     font-size: 70%;
 }
+
+.search {
+    width: 260px;
+    margin: 1px auto auto 9px;
+    padding: 0 0 0 26px;
+    height: 44px;
+    outline: 0 !important;
+    border: none;
+    display: block;
+    background: transparent none;
+    background-image: url(/assets/images/search.svg);
+    background-position-x: left;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+}
