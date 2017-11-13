@@ -19,6 +19,8 @@ doccoli-jekyll:
 #header_pages:
 # - about.html
 
+search: true
+
 # Build settings
 markdown: kramdown
 theme: doccoli-jekyll
