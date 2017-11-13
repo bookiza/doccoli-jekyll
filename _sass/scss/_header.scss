@@ -154,20 +154,20 @@ ul#results-container {
     position: absolute;
     top: 45px;
     left: 0;
+    background: aliceblue;
     li {
         width: inherit;
         display: flex;
         margin-bottom: 1px;
-        background: white;
+        background: aliceblue;
         a {
             color: #444;
-            background: #e9e9e9;
             padding: 7px 10px;
             width: inherit;
             &:hover {
                 color: #1177FF;
                 border-color: #1177FF;
-                background-color: rgba(0, 100, 255, 0.1);
+                background-color: aliceblue;
             }
         }
     }
@@ -191,3 +191,8 @@ ul#results-container {
     }
 }
 
+a.gray {
+    color: #777 !important;
+    font-style: italic;
+    pointer-events: none;
+}
