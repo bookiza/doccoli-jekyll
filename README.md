@@ -6,14 +6,11 @@ Easily add a responsive "blog-like" implementation for product documentation on 
 
 > https://example.com/docs/
 
-
-`doccoli-jekyll` was originally a fork off of [Minima](https://github.com/jekyll/minima)—the default gem-theme of Jekyll-but it has been rewritten completely using the [Toucaan CSS](https://github.com/marvindanig/toucaan) fundamentals for its themed layout.
-
-A tutorial on how to setup a jekyll blog using the `doccoli-jekyll` theme alongside your rails app is available [here](https://bubblin.io/blog/).
+A tutorial on how to setup product documentation using the `doccoli-jekyll` theme alongside your rails app is printed [here](https://bubblin.io/blog/).
 
 [Theme preview](https://jekyll.github.io/doccoli-jekyll/)
 
-![doccoli-jekyll theme preview](/screenshot.png)
+![doccoli-jekyll theme preview](/screenshot.jpg)
 
 ## Installation
 
