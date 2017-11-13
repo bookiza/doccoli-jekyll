@@ -1,8 +1,10 @@
 # doccoli-jekyll
 
-The `doccoli-jekyll` is the Jekyll theme in use at [The Bubblin Blog](https://bubblin.io/blog/). It is a particularly useful theme for situations where you want to add a blog to your site, say on the side of your rails app (website) or over a url like this:
+The `doccoli-jekyll` is the Jekyll theme in use for documentation at [Bubblin Superbooks](https://bubblin.io/docs/). It is a particularly useful theme for products made by solo founders (developers) or a bootstrapped team with very limited resources.
 
-> https://example.com/blog/
+Easily add a responsive "blog-like" implementation for product documentation on your website; something like say on the side of your rails app over a url like this:
+
+> https://example.com/docs/
 
 
 `doccoli-jekyll` was originally a fork off of [Minima](https://github.com/jekyll/minima)—the default gem-theme of Jekyll-but it has been rewritten completely using the [Toucaan CSS](https://github.com/marvindanig/toucaan) fundamentals for its themed layout.
@@ -21,10 +23,12 @@ Add this line to your Jekyll site's Gemfile:
 gem "doccoli-jekyll"
 ```
 
-And add this line to your Jekyll site:
+And add this line to your Jekyll site (_config.yml) and set `search: true`:
 
 ```yaml
 theme: doccoli-jekyll
+
+search: true
 ```
 
 And then execute:

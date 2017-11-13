@@ -239,9 +239,11 @@ th {
 
 .container {
     margin: 44px 0 0 0;
-    width: calc(100vw - 208px);
     background: white;
-    margin-left: 208px;
+}
+
+.wrapper {
+    margin: 0 auto;
 }
 
 .left {
@@ -490,6 +492,10 @@ ul.horizontal-list li {
         }
         .align {
             margin: 0 0;
+        }
+        .container {
+            width: calc(100vw - 208px);
+            margin-left: 208px;
         }
     }
 }
