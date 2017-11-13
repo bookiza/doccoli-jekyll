@@ -150,7 +150,7 @@
     background-size: 24px 24px;
 }
 
-#results-container > ul {
+ul#results-container {
     position: absolute;
     top: 45px;
     left: 0;
@@ -175,7 +175,7 @@
 
 @media (orientation: portrait) {
     body {
-        #results-container > ul {
+        ul#results-container {
             margin: 0 5vw;
             width: 90vw;
         }
@@ -184,7 +184,7 @@
 
 @media (orientation: landscape) {
     body {
-        #results-container > ul {
+        ul#results-container {
             margin: 0 85px;
             width: 500px;
         }
