@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Marvin Danig"]
   spec.email         = ["marvin@marvindanig.com"]
 
-  spec.summary       = %q{Lightweight theme for official documentation at Bubblin Superbooks.}
+  spec.summary       = %q{Lightweight jekyll theme for official documentation at Bubblin Superbooks.}
   spec.homepage      = "https://github.com/marvindanig/doccoli-jekyll.git"
   spec.license       = "MIT"
 
