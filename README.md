@@ -8,8 +8,6 @@ Easily add a responsive "blog-like" implementation for product documentation on 
 
 A tutorial on how to setup product documentation using the `doccoli-jekyll` theme alongside your rails app is printed [here](https://bubblin.io/blog/).
 
-[Theme preview](https://jekyll.github.io/doccoli-jekyll/)
-
 ![doccoli-jekyll theme preview](/screenshot.jpg)
 
 ## Installation
