@@ -1,12 +1,12 @@
 # doccoli-jekyll
 
-The `doccoli-jekyll` is the Jekyll theme in use for documentation at [Bubblin Superbooks](https://bubblin.io/docs/). It is a particularly useful theme for products made by solo founders (developers) or a bootstrapped team with very limited resources.
+The `doccoli-jekyll` is the Jekyll theme in use for [documentation](https://bubblin.io/docs/) at Bubblin Superbooks. This theme is particularly useful for solo founders (developers) or small bootstrapped teams with very limited time and resources.
 
-Easily add a responsive "blog-like" implementation for product documentation on your website; something like say on the side of your rails app over a url like this:
+Tack a responsive "blog-like" implementation of SEO-optimized documentation onto your website; it will sit on a url like so, right next to your actual product or website:
 
 > https://example.com/docs/
 
-A tutorial on how to setup product documentation using the `doccoli-jekyll` theme alongside your rails app is printed [here](https://bubblin.io/blog/).
+A tutorial on how to set up documentation using the `doccoli-jekyll` theme alongside a rails app is available [here](https://bubblin.io/blog/).
 
 ![doccoli-jekyll theme preview](/screenshot.jpg)
 
@@ -30,47 +30,6 @@ And then execute:
 
     $ bundle
 
-### Layouts
-
-Refers to files within the `_layouts` directory, that define the markup for your theme.
-
-  - `default.html` &mdash; The base layout that lays the foundation for subsequent layouts. The derived layouts inject their contents into this file at the line that says ` {{ content }} ` and are linked to this file via [FrontMatter](https://jekyllrb.com/docs/frontmatter/) declaration `layout: default`.
-  - `home.html` &mdash; The layout for your landing-page / home-page / index-page.
-  - `page.html` &mdash; The layout for your documents that contain FrontMatter, but are not posts.
-  - `post.html` &mdash; The layout for your posts.
-
-### Includes
-
-Refers to snippets of code within the `_includes` directory that can be inserted in multiple layouts (and another include-file as well) within the same theme-gem.
-
-  - `disqus_comments.html` &mdash; Code to markup disqus comment box.
-  - `footer.html` &mdash; Defines the site's footer section.
-  - `google-analytics.html` &mdash; Inserts Google Analytics module (active only in production environment).
-  - `head.html` &mdash; Code-block that defines the `<head></head>` in *default* layout.
-  - `header.html` &mdash; Defines the site's main header section. By default, pages with a defined `title` attribute will have links displayed here.
-  - `icon-* files` &mdash; Inserts github and twitter ids with respective icons.
-
-### Sass
-
-Refers to `.scss` files within the `_sass` directory that define the theme's styles.
-
-  - `doccoli-jekyll.scss` &mdash; The core file imported by preprocessed `main.scss`, it defines the variable defaults for the theme and also further imports sass partials to supplement itself.
-  - `doccoli-jekyll/_base.scss` &mdash; Resets and defines base styles for various HTML elements.
-  - `doccoli-jekyll/_layout.scss` &mdash; Defines the visual style for various layouts.
-  - `doccoli-jekyll/_syntax-highlighting.scss` &mdash; Defines the styles for syntax-highlighting.
-
-### Assets
-
-Refers to various asset files within the `assets` directory.
-Contains the `main.scss` that imports sass files from within the `_sass` directory. This `main.scss` is what gets processed into the theme's main stylesheet `main.css` called by `_layouts/default.html` via `_includes/head.html`.
-
-This directory can include sub-directories to manage assets of similar type, and will be copied over as is, to the final transformed site directory.
-
-### Plugins
-
-doccoli-jekyll comes preinstalled with the [`jekyll-seo-tag`](https://github.com/jekyll/jekyll-seo-tag) plugin to make sure your website gets the most useful meta tags. See [usage](https://github.com/jekyll/jekyll-seo-tag#usage) to know how to set it up.
-
-## Usage
 
 ### Customization
 
