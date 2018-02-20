@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "doccoli-jekyll"
-  spec.version       = "1.1.4"
+  spec.version       = "1.1.5"
   spec.authors       = ["Marvin Danig"]
   spec.email         = ["marvin@marvindanig.com"]
 
-  spec.summary       = %q{Lightweight jekyll theme for official documentation at Bubblin Superbooks.}
+  spec.summary       = %q{A featherweight jekyll theme for official documentation @Bubblin Superbooks.}
   spec.homepage      = "https://github.com/marvindanig/doccoli-jekyll.git"
   spec.license       = "MIT"
 
