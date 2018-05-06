@@ -24,7 +24,6 @@ html {
 
 body {
     color: rgba(0, 0, 0, 0.85);
-    background: aliceblue;
     margin: 0;
     font-family: 'EB Garamond', serif;
     font-smooth: always;
@@ -34,8 +33,8 @@ body {
     font-display: optional;
     -moz-osx-font-smoothing: grayscale;
     -webkit-osx-font-smoothing: antialiased;
+    background: aliceblue;
 }
-
 
 /* Anchors */
 
@@ -61,7 +60,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    font-family: 'proxima-nova', Arial, sans-serif;
+    font-family: monospace;
 }
 
 h1 {
@@ -161,12 +160,12 @@ blockquote {
     color: #333;
     border-left: 10px solid #1177FF;
     letter-spacing: -1px;
-    padding: 1em;
+    padding: 0.8em;
     margin: 2em auto;
     font-style: italic;
     background: #fffafa;
     > :last-child {
-        margin-bottom: 0;
+        margin-bottom: 0.8em;
     }
 }
 
@@ -204,22 +203,22 @@ input:-webkit-autofill {
 }
 
 ::-webkit-input-placeholder {
-    color: #05f !important;
-    font-size: 13px;
+    color: #444 !important;
+    font-size: 11px;
 }
 
 :-moz-placeholder {
-    color: #05f;
+	color: #444 !important;
     font-size: 13px;
 }
 
 ::-moz-placeholder {
-    color: #05f;
+  	color: #444 !important;
     font-size: 13px;
 }
 
 :-ms-input-placeholder {
-    color: #05f;
+    color: #444 !important;
     font-size: 13px;
 }
 
@@ -238,7 +237,7 @@ th {
 /* Element Positioning */
 
 .container {
-    margin: 44px 0 0 0;
+    margin: 46px 0 0 0;
     background: white;
 }
 
