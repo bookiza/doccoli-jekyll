@@ -95,6 +95,21 @@ To enable Google Anaytics, add the following lines to your Jekyll site:
 
 Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
 
+### Internal pages
+
+To add internal pages inside your documentation that don't appear on the sidebar directly create a `_pages` directory as sibling to _posts. Then add the following to your `_config.yml`
+
+```yaml
+include: ['_pages']
+
+collections:
+  pages:
+    output: true
+    permalink: /:path
+```
+
+Any `.markdown` file inside `_pages` directory will be available as HTML over the desired `permalink`. Yay!
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at . This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
