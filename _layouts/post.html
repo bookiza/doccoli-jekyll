@@ -25,11 +25,11 @@ layout: default
 
 		<div class="bar">
 	    {% if page.next.url %}
-	      <a class="left" href="{{ page.next.url }}" title="Article suivant">← {{ page.next.title }}</a>
+	      <a class="left" href="{{ page.next.url | relative_url }}" title="next article">← {{ page.next.title | escape }}</a>
 	    {% endif %}
 
 	  	{% if page.previous.url %}
-	      <a class="right" href="{{ page.previous.url }}" title="Article précédent"> {{ page.previous.title }} →</a>
+	      <a class="right" href="{{ page.previous.url | relative_url }}" title="previous article"> {{ page.previous.title | escape }} →</a>
 	    {% endif %}
 	  </div>
 
@@ -37,5 +37,6 @@ layout: default
     {% if site.disqus.shortname %}
       {% include disqus_comments.html %}
     {% endif %}
+
   </article>
 </div>
