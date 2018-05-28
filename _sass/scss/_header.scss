@@ -81,6 +81,9 @@
 }
 
 .navi-menu {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
     li {
         a:hover,
         &#active a:hover,
@@ -91,7 +94,6 @@
     >menu li a {
         display: block;
     }
-    white-space: nowrap;
     menu {
         white-space: nowrap;
         height: 45px;
@@ -102,7 +104,6 @@
             background-repeat: no-repeat;
         }
         a {
-            /* font-weight: 700; */
             line-height: 44px;
             padding: 13px 20px;
             color: #555;

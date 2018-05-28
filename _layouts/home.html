@@ -1,16 +1,36 @@
 ---
 layout: default
 ---
-<div class="wrapper">
+<div class="wrapper pad">
 
     <h1 href="{{ "/" | relative_url }}">{{ site.title | escape }}</h1>
 
+    <p class="">Subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></p>
+
     <hr>
 
-    <p class="right">Subscribe <a href="{{ '/feed.xml' | relative_url }}">via RSS</a></p>
 
     {{ content }}
 
+
+		{% assign post = site.posts.first %}
+
+    <h3>
+        <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h3>
+    {% assign date_format = site.doccoli-jekyll.date_format | default: "%b %-d, %Y" %}
+    <span>{{ post.date | date: date_format }}</span>
+
+
+    <p>
+			{{ post.content }}
+    </p>
+
+
+
+
+
+<!--
     <ul class="pad-vertically">
         {% for post in site.posts %}
         <li>
@@ -24,5 +44,5 @@ layout: default
         </li>
         {% endfor %}
     </ul>
-
+ -->
 </div>
