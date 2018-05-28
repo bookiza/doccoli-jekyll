@@ -104,7 +104,7 @@ hr {
 }
 
 p {
-    margin: 0 0 1.5em 0;
+    margin: 0 0 1em 0;
 }
 
 menu {
@@ -150,12 +150,12 @@ blockquote {
     color: #333;
     border-left: 10px solid #1177FF;
     letter-spacing: -1px;
-    padding: 0.8em;
+    padding: 1em;
     margin: 2em auto;
     font-style: italic;
     background: #fffafa;
     > :last-child {
-        margin-bottom: 0.8em;
+        margin-bottom: 0.5em;
     }
 }
 
