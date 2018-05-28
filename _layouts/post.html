@@ -23,6 +23,17 @@ layout: default
       {{ content }}
     </div>
 
+		<div class="bar">
+	    {% if page.next.url %}
+	      <a class="left" href="{{ page.next.url }}" title="Article suivant">← {{ page.next.title }}</a>
+	    {% endif %}
+
+	  	{% if page.previous.url %}
+	      <a class="right" href="{{ page.previous.url }}" title="Article précédent"> {{ page.previous.title }} →</a>
+	    {% endif %}
+	  </div>
+
+
     {% if site.disqus.shortname %}
       {% include disqus_comments.html %}
     {% endif %}
