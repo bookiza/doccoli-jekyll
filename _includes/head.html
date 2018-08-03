@@ -8,5 +8,10 @@
     {% if jekyll.environment == 'development' and site.google_analytics %}
       {% include google-analytics.html %}
     {% endif %}
+
+    {% if jekyll.environment == 'development' and site.heap_analytics %}
+      {% include heap-analytics.html %}
+    {% endif %}
+
     <script type="text/javascript" src="{{ 'assets/js/search.js' | relative_url }}"></script>
 </head>
