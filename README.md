@@ -95,6 +95,20 @@ To enable Google Anaytics, add the following lines to your Jekyll site:
 
 Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
 
+--
+
+### Enabling Heap Analytics
+
+To enable Heap Anaytics, add the following lines to your Jekyll site:
+
+```yaml
+  heap_analytics: NN-NNNNNNNNN
+```
+
+Heap will appear only in production, i.e., with `JEKYLL_ENV=production`
+
+--
+
 ### Internal pages
 
 To add internal pages inside your documentation that don't appear on the sidebar directly create a `_pages` directory as sibling to _posts. Then add the following to your `_config.yml`
